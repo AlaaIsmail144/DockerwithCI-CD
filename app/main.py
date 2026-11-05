@@ -25,7 +25,7 @@ class StudentIn(BaseModel):
 class StudentOut(BaseModel):
     model_config = ConfigDict(from_attributes=True)
     id: int
-    name: st
+    name: str
 
 
 @app.get("/health")
